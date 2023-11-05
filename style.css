@@ -4,12 +4,13 @@ font-family: 'Ysabeau SC', sans-serif; */
 :root {
   --primary-color: #acdcee;
   --secondary-color: #2e94b9;
+  --third-color: #f0fbff;
   --accent-color: #fd0054;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 body {
-  margin: 60px auto;
+  margin: 60px auto 0;
   max-width: 800px;
   font-family: "Ysabeau", sans-serif;
 }
@@ -52,6 +53,7 @@ p {
 
 .main-info {
   padding-top: 30px;
+  min-height: 85vh;
 }
 
 .main-info h1 {
@@ -111,6 +113,38 @@ p {
 .email-link:hover {
   text-decoration: underline;
 }
+
+footer {
+  min-height: 10vh;
+  margin: 0;
+  background: var(--third-color);
+  padding: 20px;
+}
+
+.footer-list {
+  font-weight: 100;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.social-link_name {
+  padding-left: 5px;
+}
+
+.footer {
+  margin-top: 30px;
+  text-align: center;
+  font-weight: 100;
+  font-size: small;
+  color: var(--accent-color);
+}
+
 .description {
   background: transparent;
   text-align: start;
