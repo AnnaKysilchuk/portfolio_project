@@ -1,22 +1,31 @@
-/* font-family: 'Ysabeau', sans-serif; */
-/* font-family: 'Ysabeau', sans-serif; */
+/* font-family: 'Ysabeau', sans-serif;
+font-family: 'Ysabeau SC', sans-serif; */
 
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
+  --primary-color: #acdcee;
+  --secondary-color: #2e94b9;
+  --accent-color: #fd0054;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 body {
   margin: 60px auto;
   max-width: 800px;
+  font-family: "Ysabeau", sans-serif;
+}
+
+.navbar {
+  margin: auto;
+  max-width: 1024px;
+  border-bottom: 2px solid var(--accent-color);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 h1,
 h2,
 h3 {
-  text-align: center;
   margin: 0;
+  font-family: "Ysabeau SC", sans-serif;
 }
 
 h1 {
@@ -41,35 +50,45 @@ p {
   text-align: center;
 }
 
+.main-info {
+  padding-top: 30px;
+}
+
+.main-info h1 {
+  font-weight: 700;
+}
+
 .navigation-links {
   display: flex;
   margin-top: 40px;
-  justify-content: center;
 }
 
 .navigation-links a {
-  margin: 20px;
+  min-width: 150px;
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
+  text-align: center;
+  font-weight: 700;
 }
 
 .contact-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
-  color: white;
+  color: var(--secondary-color);
+  transition: all 200ms ease-in-out;
+}
+
+.contact-link:hover {
+  background: var(--secondary-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  color: var(--primary-color);
 }
 
 .about-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
-}
-
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
 }
 
 .about-paragraphs {
