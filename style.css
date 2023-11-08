@@ -11,15 +11,17 @@ font-family: 'Ysabeau SC', sans-serif; */
 
 body {
   margin: 60px auto 0;
-  max-width: 800px;
   font-family: "Ysabeau", sans-serif;
 }
 
 .navbar {
   margin: auto;
-  max-width: 1024px;
   border-bottom: 2px solid var(--accent-color);
   background-color: rgba(255, 255, 255, 0.9);
+
+  @media (min-width: 480px) {
+    padding: 10px 30px;
+  }
 }
 
 h1,
@@ -29,8 +31,14 @@ h3 {
   font-family: "Ysabeau SC", sans-serif;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
-  font-size: 96px;
+  font-size: calc(3rem + 5vw);
 }
 
 h2 {
@@ -52,6 +60,8 @@ p {
 }
 
 .main-info {
+  max-width: 800px;
+  margin: auto;
   padding-top: 30px;
   min-height: 85vh;
 }
@@ -88,6 +98,39 @@ p {
   color: var(--primary-color);
 }
 
+.about h1,
+.about h3 {
+  text-align: center;
+}
+
+.about h4 {
+  margin: 20px 10px 0;
+  padding: 0 10px;
+  color: var(--accent-color);
+  font-weight: 700;
+
+  @media (max-width: 480px) {
+    margin: 0px;
+  }
+}
+.about .container {
+  margin: 0;
+}
+
+.container h4 {
+  text-align: center;
+}
+
+.about .container li {
+  font-size: 20px;
+  text-align: center;
+}
+
+.interests,
+.interests-description {
+  text-align: end !important;
+}
+
 .about-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
@@ -118,7 +161,7 @@ footer {
   min-height: 10vh;
   margin: 0;
   background: var(--third-color);
-  padding: 20px;
+  padding: 20px 20px 5px;
 }
 
 .footer-list {
@@ -138,7 +181,7 @@ footer a {
 }
 
 .footer {
-  margin-top: 30px;
+  margin-top: 10px;
   text-align: center;
   font-weight: 100;
   font-size: small;
@@ -151,6 +194,7 @@ footer a {
   padding-left: 0;
   padding-right: 0;
 }
+
 .description-link {
   display: block;
   width: 200px;
@@ -172,7 +216,11 @@ footer a {
 }
 
 .description-about {
-  margin-top: 15px;
-  padding: 10px;
-  text-align: center;
+  margin: 20px 10px 0;
+  padding: 0 10px;
+  text-align: start;
+
+  @media (max-width: 480px) {
+    margin: 0px;
+  }
 }
