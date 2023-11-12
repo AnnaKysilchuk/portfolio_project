@@ -55,7 +55,7 @@ h3 {
   max-width: 800px;
   margin: auto;
   padding-top: 30px;
-  min-height: 85vh;
+  min-height: 80vh;
 }
 
 .main-info h1 {
@@ -68,6 +68,7 @@ h3 {
 }
 
 .navigation-links a {
+  margin-right: 30px;
   min-width: 150px;
   border-radius: 4px;
   padding: 20px 15px;
@@ -92,11 +93,11 @@ h3 {
 
 /* --------------- footer --------------- */
 
-footer {
-  min-height: 10vh;
+.social-links {
+  min-height: 7vh;
   margin: 0;
   background: var(--third-color);
-  padding: 20px 20px 5px;
+  padding: 15px 10px 10px;
 }
 
 .footer-list {
@@ -116,7 +117,7 @@ footer a {
 }
 
 .footer {
-  margin-top: 10px;
+  margin: 10px 0;
   text-align: center;
   font-weight: 100;
   font-size: small;
@@ -215,6 +216,7 @@ footer a {
 .card {
   margin: 10px;
 }
+
 .card-body {
   text-align: center;
 }
@@ -222,24 +224,30 @@ footer a {
 .card-img {
   height: 450px;
   object-fit: cover;
+  object-position: top;
 }
 .card-title {
   font-weight: 600;
 }
 
 /* --------------- CONTACT PAGE --------------- */
-
+.contacts {
+  height: 85vh;
+}
 .contact-info {
-  height: 35vw;
   max-width: 600px;
   margin: 0 auto;
   padding: 40px;
+
+  @media (max-width: 920px) {
+    padding: 0;
+  }
 }
 
 .contact-list {
   background: var(--third-color);
   font-weight: 400;
-  font-size: calc(1.1rem + 0.9vw);
+  font-size: calc(1rem + 0.8vw);
   line-height: calc(5rem);
   list-style: none;
   margin: 0;
@@ -262,14 +270,6 @@ footer a {
 
 .social-link_name {
   padding-left: 5px;
-}
-
-.footer {
-  margin-top: 10px;
-  text-align: center;
-  font-weight: 100;
-  font-size: small;
-  color: var(--accent-color);
 }
 
 /* .about-link {
