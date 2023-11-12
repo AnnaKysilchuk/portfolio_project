@@ -6,7 +6,7 @@ font-family: 'Ysabeau SC', sans-serif; */
   --secondary-color: #2e94b9;
   --third-color: #f0fbff;
   --accent-color: #fd0054;
-  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --box-shadow: 0 5px 10px rgba(10, 1, 1, 0.3);
 }
 
 body {
@@ -197,7 +197,8 @@ footer a {
 
 /* --------------- PROJECTS PAGE --------------- */
 
-.works h1 {
+.works h1,
+.contacts h1 {
   text-align: center;
   font-size: calc(2rem + 3vw);
   padding: 10px;
@@ -226,7 +227,52 @@ footer a {
   font-weight: 600;
 }
 
-.about-link {
+/* --------------- CONTACT PAGE --------------- */
+
+.contact-info {
+  height: 48vw;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.contact-list {
+  background: var(--third-color);
+  font-weight: 400;
+  font-size: calc(1.1rem + 0.9vw);
+  line-height: calc(5rem);
+  list-style: none;
+  margin: 0;
+}
+
+.contact-list li {
+  padding: 10px 50px;
+}
+
+.contact-list a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition: all 200ms ease-in-out;
+}
+
+.contact-list a:hover {
+  color: var(--accent-color);
+  font-size: calc(1rem + 0.9vw);
+}
+
+.social-link_name {
+  padding-left: 5px;
+}
+
+.footer {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 100;
+  font-size: small;
+  color: var(--accent-color);
+}
+
+/* .about-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
@@ -250,4 +296,4 @@ footer a {
 
 .email-link:hover {
   text-decoration: underline;
-}
+} */
