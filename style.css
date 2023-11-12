@@ -233,7 +233,7 @@ footer a {
 
 /* --------------- FACTS PAGE --------------- */
 .facts {
-  height: 79vh;
+  min-height: 79vh;
 }
 .facts-container {
   @media (max-width: 768px) {
@@ -265,6 +265,9 @@ footer a {
 
 .fact {
   text-align: end;
+  @media (max-width: 768px) {
+    color: var(--accent-color);
+  }
 }
 
 /* --------------- CONTACT PAGE --------------- */
