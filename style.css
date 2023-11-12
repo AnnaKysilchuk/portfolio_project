@@ -199,7 +199,8 @@ footer a {
 /* --------------- PROJECTS PAGE --------------- */
 
 .works h1,
-.contacts h1 {
+.contacts h1,
+.facts h1 {
   text-align: center;
   font-size: calc(2rem + 3vw);
   padding: 10px;
@@ -228,6 +229,42 @@ footer a {
 }
 .card-title {
   font-weight: 600;
+}
+
+/* --------------- FACTS PAGE --------------- */
+.facts {
+  height: 79vh;
+}
+.facts-container {
+  @media (max-width: 768px) {
+    background-image: url("/images/did-you-know.png");
+    background-size: cover;
+  }
+}
+
+.gradient {
+  padding: 70px 90px;
+  @media (max-width: 768px) {
+    padding: 60px 20px;
+    background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.92) 0%,
+      rgba(255, 255, 255, 0.85) 100%
+    );
+  }
+}
+
+.facts-container h2 {
+  font-size: calc(1.5rem + 0.8vw);
+  @media (max-width: 768px) {
+    font-weight: 700;
+    text-align: center;
+    padding-top: 15px;
+  }
+}
+
+.fact {
+  text-align: end;
 }
 
 /* --------------- CONTACT PAGE --------------- */
